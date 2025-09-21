@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazakh Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flashcard-container">
+        <div class="header">
+            <h1>Kazakh Vocabulary Flashcards</h1>
+            <div class="streak-counter" id="streakCounter">Denní řada: 0 dní</div>
+        </div>
+        
+        <!-- Režim výběru -->
+        <div class="mode-selector" id="modeSelector">
+            <button id="flashcardMode" class="mode-button active">Flashcards</button>
+            <button id="practiceMode" class="mode-button">Procvičování</button>
+        </div>
+        
+        <!-- Flashcard režim -->
+        <div id="flashcardSection">
+            <div id="flashcard" class="flashcard">
+                <div class="question"></div>
+                <div class="answer"></div>
+                <div class="pronunciation"></div>
+            </div>
+            <div class="controls">
+                <button id="prevButton">Previous</button>
+                <button id="flipButton">Flip</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+        
+        <!-- Procvičovací režim -->
+        <div id="practiceSection" class="hidden">
+            <div class="practice-instructions">
+                <p>Přiřaď kazašská slova k českým překladům:</p>
+            </div>
+            <div class="practice-container" id="practiceContainer">
+                <!-- Bude naplněno JavaScriptem -->
+            </div>
+            <div class="practice-controls">
+                <button id="checkPracticeButton">Zkontrolovat</button>
+                <button id="newPracticeButton">Nové slova</button>
+                <button id="backToFlashcardsButton">Zpět k flashcards</button>
+            </div>
+            <div class="practice-feedback" id="practiceFeedback"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
