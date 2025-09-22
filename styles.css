@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f0f4f8;
-    position: relative; /* Přidáno pro pozicování tlačítka */
+    position: relative; /* Přidáno pro pozicování  tlačítka */
 }
 
 .flashcard-container {

@@ -109,7 +109,7 @@ let currentStreak = 0;
 let practiceWords = [];
 let currentSelections = {};
 
-// Funkce pro správu denní řady
+// Funkce pro správu denní  řady
 function updateStreak() {
     const today = new Date().toDateString();
     const lastVisit = localStorage.getItem('lastVisit');
