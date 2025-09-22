@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f0f4f8;
+    position: relative; /* Přidáno pro pozicování tlačítka */
 }
 
 .flashcard-container {
@@ -13,20 +14,16 @@ body {
     max-width: 500px;
     width: 100%;
     padding: 20px;
-    position: relative; /* Přidáno pro pozicování tlačítka */
 }
 
 .header {
     margin-bottom: 20px;
-    position: relative; /* Přidáno pro správné umístění dětí */
 }
 
 h1 {
     color: #2c3e50;
     margin-bottom: 10px;
     font-size: 1.8em;
-    margin-top: 0; /* Zajišťuje, že nebude překrytý */
-    padding-top: 10px; /* Přidáno pro lepší rozestup */
 }
 
 .streak-counter {
@@ -35,13 +32,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Styly pro tlačítko Prémium - OPRAVENÉ POZICOVÁNÍ */
+/* NOVÉ styly pro tlačítko Prémium - VPRAVO DOLE */
 .premium-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 6px 12px;
-    font-size: 0.8em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    font-size: 0.9em;
     border: none;
     border-radius: 5px;
     background-color: #e74c3c;
@@ -49,14 +46,15 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-weight: bold;
 }
 
 .premium-button:hover {
     background-color: #c0392b;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Zbytek původních stylů zůstává stejný */
