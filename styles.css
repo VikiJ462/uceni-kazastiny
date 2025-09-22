@@ -13,16 +13,20 @@ body {
     max-width: 500px;
     width: 100%;
     padding: 20px;
+    position: relative; /* Přidáno pro pozicování tlačítka */
 }
 
 .header {
     margin-bottom: 20px;
+    position: relative; /* Přidáno pro správné umístění dětí */
 }
 
 h1 {
     color: #2c3e50;
     margin-bottom: 10px;
     font-size: 1.8em;
+    margin-top: 0; /* Zajišťuje, že nebude překrytý */
+    padding-top: 10px; /* Přidáno pro lepší rozestup */
 }
 
 .streak-counter {
@@ -31,6 +35,31 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Styly pro tlačítko Prémium - OPRAVENÉ POZICOVÁNÍ */
+.premium-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.premium-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Zbytek původních stylů zůstává stejný */
 .mode-selector {
     display: flex;
     justify-content: center;
